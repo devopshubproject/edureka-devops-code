@@ -14,8 +14,23 @@ Running the example from the command line
 $ mvn jetty:run
 ```
 
-Open [http://localhost:8080/](http://localhost:8080/)
+Open [http://localhost:9999/](http://localhost:9999/)
 
+**INFO**: Host and Port can be altered in the pom.xml file
+
+```
+    <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>9.2.3.v20140905</version>
+        <configuration>
+            <httpConnector>
+                <!--host>localhost</host-->
+                <port>9999</port>
+            </httpConnector>
+        </configuration>
+    </plugin>
+```
 
 Importing in IntelliJ IDEA 14
 --------------------
